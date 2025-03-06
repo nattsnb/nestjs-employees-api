@@ -28,7 +28,7 @@ export class EmployeesService {
     return newEmployee;
   }
 
-  upDateEmployee(id: number, employee: EmployeeDto) {
+  updateEmployee(id: number, employee: EmployeeDto) {
     const employeeIndex = this.employees.findIndex(
       (employee) => employee.id === id,
     );

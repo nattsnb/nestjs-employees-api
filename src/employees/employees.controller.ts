@@ -32,7 +32,7 @@ export class EmployeesController {
 
   @Patch(':id')
   upDate(@Param('id', ParseIntPipe) id: number, @Body() employee: EmployeeDto) {
-    return this.employeeService.upDateEmployee(id, employee);
+    return this.employeeService.updateEmployee(id, employee);
   }
 
   @Delete(':id')
